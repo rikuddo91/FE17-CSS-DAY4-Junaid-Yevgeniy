@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .baner {
@@ -24,14 +23,21 @@
 
 .item1 h3 {
     font-size: 40px;
-
 }
 
-.item1 span{
+.item1 span {
     opacity: 0.7;
 }
-.item1 p{
+.item1 p {
     padding-top: 10px;
+}
+.item1 #p:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease;
+}
+.item1 #s:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease;
 }
 
 .item2 {
@@ -43,114 +49,162 @@
     width: 150px;
     margin-right: 30px;
 }
+.item2 #email:hover{
+    transform: scale(3);
+    transition: transform 0.5s ease;
+}
+.item2 #basket:hover{
+    transform: scale(3);
+    transition: transform 0.5s ease;
+}
+.item2 #login:hover{
+    transform: scale(3);
+    transition: transform 0.5s ease;
+}
 
-.nav{
+.nav {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     background-color: rgb(247, 237, 223);
     padding: 0px 40px;
-
 }
 
-a{
-    text-decoration: none;  
+a {
+    text-decoration: none;
     color: black;
 }
 
 /*flexbox*/
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
-.item3{
+.item3 {
     display: flex;
     flex-direction: row;
-   
-    background-color:rgb(203, 38, 113) ;
-   
+    background-color: rgb(203, 38, 113);
 }
 
-.a3{
+.a3 {
     font-size: 50px;
-    
     color: white;
-   width: 450px;
+    width: 450px;
     padding: 100px;
-
 }
-#naslov{
+#naslov {
     font-size: 75px;
     font-weight: bold;
 }
 
-.a3 button{
+.a3 button {
     padding: 10px;
-    color: rgb(203, 38, 113) ;
+    color: rgb(203, 38, 113);
     border-radius: 8px;
 }
+.a3 button:hover {
+    transform: scale(2);
+    transition: transform 0.5s ease;
+}
 
-.cena1{
+.cena1 {
     background-color: white;
     margin-top: 90px;
     margin-left: 150px;
     width: 250px;
     height: 200px;
-    color:rgb(203, 38, 113) ;
+    color: rgb(203, 38, 113);
     font-size: 25px;
     text-align: center;
 }
 
-#samsung{
+#samsung {
     font-size: 30px;
     font-weight: bold;
 }
-#nula{
+#nula {
     font-size: 80px;
     font-weight: bold;
 }
-.cena1 span{
+.cena1 span {
     text-decoration: line-through;
 }
-.cena2{
+.cena2 {
     background-color: white;
     margin-top: 10px;
     margin-left: 150px;
     width: 250px;
     height: 160px;
-    color:rgb(203, 38, 113) ;
+    color: rgb(203, 38, 113);
     font-size: 25px;
     text-align: center;
 }
-
-
-.sitno{
-    color: white;
-    margin-left: 150px;
-
+.cena1:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease;
+}
+.cena2:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease;
 }
 
-.b3{
+.sitno {
+    color: white;
+    margin-left: 150px;
+}
+
+.b3 {
     padding-top: 20px;
 }
 
-.b3 img{
+.b3 img {
     border-radius: 5px;
 }
+.b3 img:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+}
 
-#gratis{
+#gratis {
     font-size: 70px;
     font-weight: bold;
 }
 
-#prvaslika:hover{
+#prvaslika:hover {
     color: black;
     cursor: pointer;
+}
+.navbar {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 10% 15% 10% 10% 13% 12% 15% 14%;
+    grid-auto-rows: minmax(5vh, auto);
+    column-gap: 0.1em;
+    row-gap: 0.1em;
+    text-decoration-line: underline;
+    text-align: center;
+    background-color: rgb(203, 38, 113);
+    text-decoration-color: rgb(203, 38, 113);
+}
+.navi {
+    border-radius: 8px;
+    background-color: rgb(213, 211, 208);
+    color: rgb(203, 38, 113);
+    transition: transform 0.5s ease;
+    padding: 15px;
+}
+
+.navi a{
+    color: rgb(203, 38, 113);
+    font-size: 15px;
+    margin: 15px;
     
+}
+.navi:hover{
+    transform: scale(1.5);
 }
